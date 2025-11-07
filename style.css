@@ -1,0 +1,7 @@
+body{
+    text-align:  center;
+    color: color-mix(in xyz, whitesmoke 70%, gray 30%);
+    background-color: color-mix(in srgb-linear, green 60%, rgb(94, 28, 28) 40%);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
