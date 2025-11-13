@@ -37,8 +37,8 @@ function calcular() {
     resposta.innerHTML = ``
 
     resposta.innerHTML += `Valor Futuro do Capital: R$ ${valorFinalCap.toFixed(2)} <br>`
-    resposta.innerHTML += `<p>Valor da Aplicação (Depósitos): R$ ${valorFinalReg.toFixed(2)} <br>`
-    resposta.innerHTML += `<p>Valor do Financiamento: R$ ${valorFinanciadoFinal.toFixed(2)} <br>`
+    resposta.innerHTML += `Valor da Aplicação (Depósitos): R$ ${valorFinalReg.toFixed(2)} <br>`
+    resposta.innerHTML += `Valor do Financiamento: R$ ${valorFinanciadoFinal.toFixed(2)} <br>`
 
 
     console.log(`Valor Futuro: ${valorFinalCap.toFixed(2)}`)
