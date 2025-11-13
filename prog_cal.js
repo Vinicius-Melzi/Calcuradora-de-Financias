@@ -19,11 +19,11 @@ function calcular() {
 
     let resposta = document.getElementById("resultados")
 
-    let taxaPercentual = Number(document.getElementById("inputTaxa").value)
-    let meses = Number(document.getElementById("inputMeses").value)
-    let capAtual = Number(document.getElementById("inputCapAtual").value)
-    let valorDepositoReg = Number(document.getElementById("inputDepositoReg").value)
-    let valorPrestado = Number(document.getElementById("inputValorPrestado").value)
+    let taxaPercentual = Number(document.getElementById("taxaPercentual").value)
+    let meses = Number(document.getElementById("meses").value)
+    let capAtual = Number(document.getElementById("capAtual").value)
+    let valorDepositoReg = Number(document.getElementById("valorDepositoReg").value)
+    let valorPrestado = Number(document.getElementById("valorPrestado").value)
 
     let taxa = taxaPercentual / 100.0
 
