@@ -19,26 +19,26 @@ function calcular() {
 
     let resposta = document.getElementById("resultados");
 
-    const taxaPercentual = Number(document.getElementById("inputTaxa").value);
-    const meses = Number(document.getElementById("inputMeses").value);
-    const capAtual = Number(document.getElementById("inputCapAtual").value);
-    const valorDepositoReg = Number(document.getElementById("inputDepositoReg").value);
-    const valorPrestado = Number(document.getElementById("inputValorPrestado").value);
+    let taxaPercentual = Number(document.getElementById("inputTaxa").value);
+    let meses = Number(document.getElementById("inputMeses").value);
+    let capAtual = Number(document.getElementById("inputCapAtual").value);
+    let valorDepositoReg = Number(document.getElementById("inputDepositoReg").value);
+    let valorPrestado = Number(document.getElementById("inputValorPrestado").value);
 
-    const taxa = taxaPercentual / 100.0;
+    let taxa = taxaPercentual / 100.0;
 
     
 
-    const valorFinalCap = calValorFuturoCap(taxa, meses, capAtual);
-    const valorFinalReg = calValorAplicadoReg(taxa, meses, valorDepositoReg);
-    const valorFinanciadoFinal = calValorFinanciamentoFix(taxa, meses, valorPrestado);
+    let valorFinalCap = calValorFuturoCap(taxa, meses, capAtual);
+    let valorFinalReg = calValorAplicadoReg(taxa, meses, valorDepositoReg);
+    let valorFinanciadoFinal = calValorFinanciamentoFix(taxa, meses, valorPrestado);
 
 
     resposta.innerHTML = ""; 
 
-    resposta.innerHTML += `<p>Valor Futuro do Capital: R$ ${valorFinalCap.toFixed(2)}</p>`;
-    resposta.innerHTML += `<p>Valor da Aplicação (Depósitos): R$ ${valorFinalReg.toFixed(2)}</p>`;
-    resposta.innerHTML += `<p>Valor do Financiamento: R$ ${valorFinanciadoFinal.toFixed(2)}</p>`;
+    resposta.innerHTML += `Valor Futuro do Capital: R$ ${valorFinalCap.toFixed(2)} <br>`;
+    resposta.innerHTML += `<p>Valor da Aplicação (Depósitos): R$ ${valorFinalReg.toFixed(2)} <br>`;
+    resposta.innerHTML += `<p>Valor do Financiamento: R$ ${valorFinanciadoFinal.toFixed(2)} <br>`;
 
 
     console.log(`Valor Futuro: ${valorFinalCap.toFixed(2)}`);
